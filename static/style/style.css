@@ -1107,7 +1107,9 @@ header .item {
     }
 }
 @media(max-width: 992px){
-
+    body{
+        letter-spacing: 0;
+    }
     .page-flexbox{
         display: block;
     }
