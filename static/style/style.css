@@ -1714,3 +1714,6 @@ header .item {
         box-shadow: 0px 0px 0px 3px #20CFBA;
     }
 }
+.copyright-text{
+    margin: 0 auto;
+}
