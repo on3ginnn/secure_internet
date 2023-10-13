@@ -1,8 +1,6 @@
 windowOnload = true
 
 window.onload = function () {
-    // document.querySelector('.preloader').classList.add('_un_active');
-    // document.querySelector('body').classList.remove('_lock');
 
     // подгрузка размера для card
     function setCardsHeight() {
