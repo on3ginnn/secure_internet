@@ -1,6 +1,7 @@
 "use strict"
 
 document.addEventListener('DOMContentLoaded', function (){
+    document.querySelector('.preloader').classList.add('_un_active');
     const images = document.querySelectorAll('img[data-src]');
     const videos = document.querySelectorAll('iframe[data-src-video]');
     const windowHeight = document.documentElement.clientHeight;
@@ -63,7 +64,7 @@ document.addEventListener('DOMContentLoaded', function (){
 
 // });
 // window.onload = function () {
-    document.querySelector('.preloader').classList.add('_un_active');
+    // document.querySelector('.preloader').classList.add('_un_active');
     // document.querySelector('body').classList.remove('_lock');
 
 
