@@ -291,7 +291,22 @@ document.addEventListener('DOMContentLoaded', function (){
     
     // обработка событий клика
     function documentClick(event){
-        
+        // меню
+        if (event.target.closest('.burger-menu')) {
+            let navbar = document.querySelector(".header__navbar");
+            let menu = event.target.closest('.burger-menu');
+            
+            if (menu.classList.contains('_active')){
+                navbar.classList.remove('_active');
+                menu.classList.remove('_active');
+                document.body.classList.remove('_lock');
+            } else {
+                navbar.classList.add('_active');
+                menu.classList.add('_active');
+                document.body.classList.add('_lock');
+            }
+        }
+        // тема
         if (event.target.closest('.dark-mode')) {
             if (theme === 'light') {
                 event.target.closest('.dark-mode').innerHTML = `
