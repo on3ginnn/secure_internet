@@ -1,0 +1,69 @@
+.contact__grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+.contact__online-chat{
+  grid-row: 2 span;
+}
+.contact__form{
+  height: 100%;
+  position: relative;
+}
+.form__content{
+  height: 100%;
+  flex-direction: column;
+}
+.online-chat__wrapper{
+  flex: 1 1 auto;
+  margin: 30px -25px -25px;
+}
+.online-chat{
+  height: 100%;
+  background: white;
+  padding: 5px 45px;
+  min-height: 400px;
+}
+.online-chat__container{
+  flex-direction: column;
+  height: 100%;
+}
+.online-chat__messages{
+  flex: 1 1 100%;
+  padding: 10px 0;
+  flex-direction: column;
+}
+.online-chat__text{
+  font-size: 18px;
+  line-height: 100%;
+  font-weight: 500;
+}
+.online-chat__btn{
+  position: absolute !important;
+  top: 2px !important;
+  right: 2px !important;
+  height: 92% !important;
+}
+
+.bot-message{
+  padding: 15px 15px;
+  border-radius: 12px;
+  background: var(--color-silver);
+  position: relative;
+}
+
+.bot-message:after{
+  content: '';
+  position: absolute;
+  left: -7px;
+  bottom: 5px;
+  border: 7.5px solid transparent;
+  border-bottom: 15px solid var(--color-silver);
+}
+.bot-message:before{
+  content: url('../img/support.svg');
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: translateX(-120%);
+}
