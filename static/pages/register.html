@@ -9,10 +9,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" type="text/css" href="../style/style.css">
-    <link rel="stylesheet" type="text/css" href="../style/contact.css">
+    <link rel="stylesheet" type="text/css" href="../style/auth.css">
     <link rel="stylesheet" type="text/css" href="../style/responsibility.css">
     <link rel="shortcut icon" href="../logo.ico" type="image/x-icon">
-    <title>ISoft - Контакты</title>
+    <title>ISoft - Регистрация</title>
   </head>
   <body class="_lock">
     <div class="preloader">
@@ -81,56 +81,34 @@
         <main>
           <section class="contact">
             <div class="contact__body _container">
-              <h2>Остались вопросы?</h2>
+              <h2>Регистрация</h2>
               <div class="contact__content box">
-                <div class="contact__grid">
-                  <div class="contact__item">
-                    <h3 class="limitat">
-                      Оставьте <span class="accent">заявку</span> или воспользуйтесь <span class="accent">онлайн чатом</span> поддержки
-                    </h3>
-                  </div>
-                  <div class="contact__item contact__online-chat">
-                    <form class="contact__form contact-form form limitat">
-                      <div class="form__content items">
-                        <h3 class="question">Онлайн поддержка</h3>
-                        <div class="online-chat__wrapper paragraph">
-                          <div class="contact__input online-chat">
-                            <div class="online-chat__container items">
-                              <ul class="online-chat__messages items">
-                                <li class="online-chat__message bot-message item">
-                                  <div class="online-chat__text">
-                                    Привет! Опишите свою проблему :)
-                                  </div>
-                                </li>
-                              </ul>
-                              <div class="online-chat__input form-input">
-                                <input type="text" name="chatMessage" id="chatMessage" placeholder="Введите сообщение...">
-                                <button class="online-chat__btn btn"></button>
-                              </div>
-                            </div>
-                          </div>
+                <form class="profile__form profile-form form limitat">
+                  <div class="form__content">
+                    <label for="username" class="form-label">Юзернейм</label>
+                    <div class="profile__input form-input">
+                      <input type="text" name="username" id="username" placeholder="Введите..." value="">
+                    </div>
+                    <label for="phoneNumber" class="form-label">Номер телефона</label>
+                    <div class="profile__input form-input">
+                      <input type="tel" name="phoneNumber" id="phoneNumber" placeholder="Введите..." value="">
+                    </div>
+                    <label for="password" class="form-label">Пароль</label>
+                    <div class="profile__input form-input">
+                      <input type="password" name="password" id="password" placeholder="Введите..." value="">
+                    </div>
+                    <div class="settbar auth_settbar paragraph">
+                        <div class="next__btn btn">
+                            зарегистрироваться
                         </div>
-                      </div>
-                    </form>
-                  </div>
-                  <div class="contact__item">
-                    <form class="contact__form contact-form form limitat">
-                      <div class="form__content">
+                        <div class="">
+                          есть аккаунт? <a class="accent" href="./login.html">войти</a>
 
-                        <h3 class="question">Оставьте свой номер телефона</h3>
-                        <div class="contact__input form-input paragraph">
-                          <input type="tel" name="phoneNumber" id="phoneNumber" placeholder="Номер телефона">
                         </div>
-                        <div class="settbar paragraph">
-                            <div class="next__btn btn">
-                                позвонить мне
-                            </div>
-                        </div>
-
-                      </div>
-                  </form>
+                    </div>
                   </div>
-                </div>
+                </form>
+
               </div>
             </div>
           </section>

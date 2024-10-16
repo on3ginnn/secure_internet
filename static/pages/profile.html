@@ -1,12 +1,148 @@
 <!DOCTYPE html>
 <html lang="">
   <head>
-    <meta charset="utf-8">
-    <title></title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <meta name="format-detection" content="telephone=no">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" type="text/css" href="../style/style.css">
+    <link rel="stylesheet" type="text/css" href="../style/profile.css">
+    <link rel="stylesheet" type="text/css" href="../style/responsibility.css">
+    <link rel="shortcut icon" href="../logo.ico" type="image/x-icon">
+    <title>ISoft - Профиль</title>
   </head>
-  <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+  <body class="_lock">
+    <div class="preloader">
+        <div class="preloader__anim">
+            <div class="loader">
+                <span class="loader-text">загрузка...</span>
+                <span class="load"></span>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__body">
+                <div class="header__panel">
+                    <div class="header__panel-inner items">
+                        <a href="../../index.html" class="header__logo items">
+                            <div class="header__logo-img">
+                                <img  data-src="../img/logo.svg" src="../img/1x1.png" alt="logo.svg">
+                            </div>
+                            <div class="header__logo-text accent">
+                                ISoft
+                            </div>
+                        </a>
+                        <div class="header__navbar">
+                            <nav class="header_nav">
+                                <ul class="header__navbar-items items">
+                                    <li class="header__navbar-item item">
+                                        <ul class="header__items-links header__nav-links header__buttons items">
+                                            <li class="header__items-link item">
+                                                <a href="./catalog.html" class="header__link">Каталог</a>
+                                            </li>
+                                            <li class="header__items-link item">
+                                                <a href="./contact.html" class="header__link">Связаться с нами</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="header__navbar-item item">
+                                        <ul class="header__items-services header__buttons items">
+                                            <li class="header__items-service">
+                                                <a href="./basket.html" class="header__link">
+                                                    <img data-src="../img/basket.svg" src="../img/1x1.png" alt="basket.svg">
+                                                </a>
+                                            </li>
+                                            <li class="header__items-service">
+                                                <a href="./profile.html" class="header__link">
+                                                    <img data-src="../img/profile.svg" src="../img/1x1.png" alt="profile.svg">
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="header__navbar-item item">
+                                        <a class="source__btn btn" href="./login.html">войти</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="header__menu burger-menu">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+          <section class="profile">
+            <div class="profile__body _container">
+              <h2>Профиль</h2>
+              <div class="profile__content box">
+                <div class="profile-flexbox flexbox">
+                  <div class="flexbox__left">
+                      <div class="page-img">
+                          <img data-src="../img/page.png" src="../img/1x1.png" alt="page.png">
+                      </div>
+                  </div>
+                  <div class="flexbox__right">
+                    <form class="profile__form profile-form form limitat">
+                      <div class="form__content">
+                        <h3 class="question">Ваши данные</h3>
+                        <label for="username" class="form-label">Юзернейм</label>
+                        <div class="profile__input form-input">
+                          <input readonly type="text" name="username" id="username" placeholder="Юзенейм" value="Username433">
+                        </div>
+                        <label for="phoneNumber" class="form-label">Номер телефона</label>
+                        <div class="profile__input form-input">
+                          <input readonly type="tel" name="phoneNumber" id="phoneNumber" placeholder="Номер телефона" value="+7 888 999 22 33">
+                        </div>
+                        <label for="password" class="form-label">Пароль</label>
+                        <div class="profile__input form-input">
+                          <input readonly type="password" name="password" id="password" placeholder="Пароль" value="qwerty">
+                        </div>
+                        <div class="settbar paragraph">
+                            <div class="next__btn btn">
+                                изменить
+                            </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+              </div>
+              </div>
+              <h3 class="box">Ваши услуги</h3>
+                <div class="flex paragraph gap-5">
+                    <div class="lg:w-1/2 md:w-full">
+                        <div class="flex border-2 rounded-lg border-gray-200 border-opacity-50 p-8 sm:flex-row flex-col">
+                            <div class="flex-grow">
+                                <h3 class="text-gray-900 text-lg title-font font-medium mb-3">Консультация</h3>
+                                <p class="leading-relaxed text-base">Мы проконсультируем вас по вашему сайту. Найдем и выявим угрозы и уязвимости.</p>
+                                <a class="btn mt-3">подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:w-1/2 md:w-full">
+                        <div class="flex border-2 rounded-lg border-gray-200 border-opacity-50 p-8 sm:flex-row flex-col">
+                            <div class="flex-grow">
+                                <h3 class="text-gray-900 text-lg title-font font-medium mb-3">Устранение уязвимостей</h3>
+                                <p class="leading-relaxed text-base">Мы не только найдем уязвимости, а еще и ликвидируем их. В качесте итога ваш сайт получит сертификат безопасности.</p>
+                                <a class="btn mt-3">подробнее</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </section>
+        </main>
+    </div>
+    <script src="../js/script.js"></script>
   </body>
 </html>

@@ -176,6 +176,7 @@ body.dark_mode .navigation .form{
     position: relative;
     display: inline-block;
 }
+
 .form.info{
     border-radius: 5px 0 0 5px;
     border-left: 5px solid #20cfba;
@@ -232,6 +233,17 @@ body.dark_mode .navigation .form::before{
     border: 1px solid var(--color-grey);
     min-height: 50px;
 }
+.form-label {
+    font-size: 18px !important;
+    font-weight: 600;
+    line-height: 100%;
+    display: block;
+    margin: 10px 0 5px 0;
+    display: block;
+  }
+.form-input input{
+    width: 100%;
+}
 
 .info{
     color: #000000;
@@ -256,20 +268,20 @@ section{
     color: #20CFBA;
 }
 h3{
-    font-size: 36px;
-    line-height: calc(49 / 36 * 100%);
+    font-size: 36px !important;
+    line-height: calc(49 / 36 * 100%) !important;
     color: #000000;
 }
 h1{
-    font-weight: 700;
-    font-size: 64px;
-    line-height: calc(87 / 64 * 100%);
+    font-weight: 700 !important;
+    font-size: 64px !important;
+    line-height: calc(87 / 64 * 100%) !important;
     color: #000000;
 }
 h2{
-    font-weight: 700;
-    font-size: 64px;
-    line-height: calc(87 / 64 * 100%);
+    font-weight: 700 !important;
+    font-size: 64px !important;
+    line-height: calc(87 / 64 * 100%) !important;
     color: #000000;
 }
 .title{
@@ -758,6 +770,7 @@ body.dark_mode .card__item:not(._active, #card-1) .card__text_wrapper::before{
 
 .security .items {
     padding-left: 45px;
+    display: block;
 }
 .security .item {
     position: relative;
@@ -1007,6 +1020,7 @@ body.dark_mode .card__item:not(._active, #card-1) .card__text_wrapper::before{
     border-color: #20CFBA;
 }
 .settbar {
+    align-items: center;
     display: flex;
     justify-content: space-between;
 }

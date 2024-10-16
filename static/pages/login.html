@@ -1,12 +1,115 @@
 <!DOCTYPE html>
 <html lang="">
   <head>
-    <meta charset="utf-8">
-    <title></title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" type="text/css" href="../style/style.css">
+    <link rel="stylesheet" type="text/css" href="../style/auth.css">
+    <link rel="stylesheet" type="text/css" href="../style/responsibility.css">
+    <link rel="shortcut icon" href="../logo.ico" type="image/x-icon">
+    <title>ISoft - Вход</title>
   </head>
-  <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+  <body class="_lock">
+    <div class="preloader">
+        <div class="preloader__anim">
+            <div class="loader">
+                <span class="loader-text">загрузка...</span>
+                <span class="load"></span>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__body">
+                <div class="header__panel">
+                    <div class="header__panel-inner items">
+                        <a href="../../index.html" class="header__logo items">
+                            <div class="header__logo-img">
+                                <img  data-src="../img/logo.svg" src="../img/1x1.png" alt="logo.svg">
+                            </div>
+                            <div class="header__logo-text accent">
+                                ISoft
+                            </div>
+                        </a>
+                        <div class="header__navbar">
+                            <nav class="header_nav">
+                                <ul class="header__navbar-items items">
+                                    <li class="header__navbar-item item">
+                                        <ul class="header__items-links header__nav-links header__buttons items">
+                                            <li class="header__items-link item">
+                                                <a href="./catalog.html" class="header__link">Каталог</a>
+                                            </li>
+                                            <li class="header__items-link item">
+                                                <a href="./contact.html" class="header__link">Связаться с нами</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="header__navbar-item item">
+                                        <ul class="header__items-services header__buttons items">
+                                            <li class="header__items-service">
+                                                <a href="./basket.html" class="header__link">
+                                                    <img data-src="../img/basket.svg" src="../img/1x1.png" alt="basket.svg">
+                                                </a>
+                                            </li>
+                                            <li class="header__items-service">
+                                                <a href="./profile.html" class="header__link">
+                                                    <img data-src="../img/profile.svg" src="../img/1x1.png" alt="profile.svg">
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="header__navbar-item item">
+                                        <a class="source__btn btn" href="./login.html">войти</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="header__menu burger-menu">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+          <section class="contact">
+            <div class="contact__body _container">
+              <h2>Вход</h2>
+              <div class="contact__content box">
+                <form class="profile__form profile-form form limitat">
+                  <div class="form__content">
+                    <label for="username" class="form-label">Юзернейм</label>
+                    <div class="profile__input form-input">
+                      <input type="text" name="username" id="username" placeholder="Введите..." value="Username433">
+                    </div>
+                    <label for="password" class="form-label">Пароль</label>
+                    <div class="profile__input form-input">
+                      <input type="password" name="password" id="password" placeholder="Введите..." value="qwerty">
+                    </div>
+                    <div class="settbar auth_settbar paragraph">
+                        <div class="next__btn btn">
+                            войти
+                        </div>
+                        <div class="">
+                          нет аккаунта? <a class="accent" href="./register.html">зарегистрироваться</a>
+
+                        </div>
+                    </div>
+                  </div>
+                </form>
+
+              </div>
+            </div>
+          </section>
+        </main>
+    </div>
+    <script src="../js/script.js"></script>
   </body>
 </html>

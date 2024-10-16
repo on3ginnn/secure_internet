@@ -67,3 +67,6 @@
   bottom: 0;
   transform: translateX(-120%);
 }
+.online-chat__input {
+  padding-right: 80px;
+}

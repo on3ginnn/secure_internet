@@ -8,7 +8,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <meta name="format-detection" content="telephone=no">
+    <script src="https://cdn.tailwindcss.com"></script>
+
     <link rel="stylesheet" type="text/css" href="../style/style.css">
+    <link rel="stylesheet" type="text/css" href="../style/catalog.css">
+    <link rel="stylesheet" type="text/css" href="../style/responsibility.css">
     <link rel="shortcut icon" href="../logo.ico" type="image/x-icon">
     <title>ISoft - Каталог</title>
   </head>
@@ -55,7 +59,7 @@
                                                 </a>
                                             </li>
                                             <li class="header__items-service">
-                                                <a href="./static/pages/profile.html" class="header__link">
+                                                <a href="./profile.html" class="header__link">
                                                     <img data-src="../img/profile.svg" src="../img/1x1.png" alt="profile.svg">
                                                 </a>
                                             </li>
@@ -77,20 +81,359 @@
             </div>
         </header>
         <main>
-          <section class="contact">
-            <div class="contact__body _container">
+          <section class="catalog">
+            <div class="catalog__body _container">
               <h2>Каталог</h2>
-              <div class="contact__content box">
-                <div class="contact__grid">
-                  <div class="contact__item">
+              <div class="catalog__content box">
+                <div class="">
+                    <div class="grid grid-cols-1 gap-4 sm:items-stretch md:gap-8">
+                      <div class="divide-y sm:flex divide-gray-200 rounded-2xl border border-gray-200 shadow-sm">
+                        <div class="p-6 flex flex-col justify-center sm:px-8">
+                          <h3 class="">
+                            Консультация
+                            <span class="sr-only">Plan</span>
+                          </h3>
+                  
+                          <p class="mt-2 text-gray-700">Мы готовы проконсультировать вас по вашему существующему сайту.</p>
+                  
+                          <p class="mt-2 sm:mt-4">
+                            <strong class="text-3xl font-bold text-gray-900 sm:text-4xl"> 20$ </strong>
+                          </p>
+                  
+                          <a
+                            class="btn mt-4 block text-center sm:mt-6"
+                            href="#"
+                          >
+                            заказать
+                          </a>
+                        </div>
+                        <div class="p-6 sm:px-8">
+                          <ul class="mt-2 space-y-2 sm:mt-4">
+                            <li class="flex items-center gap-1">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="1.5"
+                                stroke="currentColor"
+                                class="size-5 accent"
+                              >
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                              </svg>
+                  
+                              <span class="text-gray-700">Консультация</span>
+                            </li>
+                  
+                            <li class="flex items-center gap-1">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="1.5"
+                                stroke="currentColor"
+                                class="size-5 accent"
+                              >
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                              </svg>
+                  
+                              <span class="text-gray-700">Анализ сайта</span>
+                            </li>
+                  
+                            <li class="flex items-center gap-1">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="1.5"
+                                stroke="currentColor"
+                                class="size-5 accent"
+                              >
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                              </svg>
+                  
+                              <span class="text-gray-700">Выявление уязвимостей</span>
+                            </li>
+                  
+                            <li class="flex items-center gap-1">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="1.5"
+                                stroke="currentColor"
+                                class="size-5 text-red-700"
+                              >
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                              </svg>
+                  
+                              <span class="text-gray-700">Устранение уязвимостей</span>
+                            </li>
+                  
+                            <li class="flex items-center gap-1">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="1.5"
+                                stroke="currentColor"
+                                class="size-5 text-red-700"
+                              >
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                              </svg>
+                  
+                              <span class="text-gray-700">Создание сайта</span>
+                            </li>
+                  
+                            <li class="flex items-center gap-1">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="1.5"
+                                stroke="currentColor"
+                                class="size-5 text-red-700"
+                              >
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                              </svg>
+                  
+                              <span class="text-gray-700">Сертификат безопасности</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="divide-y sm:flex rounded-2xl border accent_border">
+                        <div class="p-6 flex flex-col justify-center sm:px-8">
+                          <h3 class="">
+                            Сайт с нуля
+                            <span class="sr-only">Plan</span>
+                          </h3>
+                  
+                          <p class="mt-2 text-gray-700">Мы создадим вам полноценный сайт с полной гарантией кибер безопасности.</p>
+                  
+                          <p class="mt-2 sm:mt-4">
+                            <span class="text-sm font-medium text-gray-700">до</span>
 
-                  </div>
-                  <div class="contact__item">
+                            <strong class="ml-1 text-3xl font-bold text-gray-900 sm:text-4xl"> 1000$ </strong>
+                          </p>
+                  
+                          <a
+                            class="btn mt-4 block text-center sm:mt-6"
+                            href="#"
+                          >
+                            заказать
+                          </a>
+                        </div>
+                        <div class="p-6 sm:px-8">
+                          <ul class="mt-2 space-y-2 sm:mt-4">
+                            <li class="flex items-center gap-1">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="1.5"
+                                stroke="currentColor"
+                                class="size-5 accent"
+                              >
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                              </svg>
+                  
+                              <span class="text-gray-700">Консультация</span>
+                            </li>
+                  
+                            <li class="flex items-center gap-1">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="1.5"
+                                stroke="currentColor"
+                                class="size-5 accent"
+                              >
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                              </svg>
+                  
+                              <span class="text-gray-700">Макет сайта</span>
+                            </li>
+                  
+                            <li class="flex items-center gap-1">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="1.5"
+                                stroke="currentColor"
+                                class="size-5 accent"
+                              >
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                              </svg>
+                  
+                              <span class="text-gray-700">Верстка сайта</span>
+                            </li>
+                  
+                            <li class="flex items-center gap-1">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="1.5"
+                                stroke="currentColor"
+                                class="size-5 accent"
+                              >
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                              </svg>
+                  
+                              <span class="text-gray-700">Бэкенд</span>
+                            </li>
+                  
+                            <li class="flex items-center gap-1">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="1.5"
+                                stroke="currentColor"
+                                class="size-5 accent"
+                              >
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                              </svg>
+                  
+                              <span class="text-gray-700">База данных</span>
+                            </li>
+                  
+                            <li class="flex items-center gap-1">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="1.5"
+                                stroke="currentColor"
+                                class="size-5 accent"
+                              >
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                              </svg>
+                  
+                              <span class="text-gray-700">Сертификат безопасности</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="divide-y sm:flex divide-gray-200 rounded-2xl border border-gray-200 shadow-sm">
+                        <div class="p-6 flex flex-col justify-center sm:px-8">
+                          <h3 class="">
+                            Устранение уязвимостей
+                          </h3>
+                  
+                          <p class="mt-2 text-gray-700">Мы проанализируем ваш сайт и устраним все кибер уязвимости.</p>
+                  
+                          <p class="mt-2 sm:mt-4">
+                            <span class="text-sm font-medium text-gray-700">от</span>
 
-                  </div>
-                  <div class="contact__item">
+                            <strong class="ml-1 text-3xl font-bold text-gray-900 sm:text-4xl"> 200$ </strong>
+                  
+                          </p>
+                  
+                          <a
+                            class="btn mt-4 block text-center sm:mt-6"
+                            href="#"
+                          >
+                          заказать
+                          </a>
+                        </div>
+                        <div class="p-6 sm:px-8">
+                          <ul class="mt-2 space-y-2 sm:mt-4">
+                            <li class="flex items-center gap-1">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="1.5"
+                                stroke="currentColor"
+                                class="size-5 accent"
+                              >
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                              </svg>
+                  
+                              <span class="text-gray-700">Консультация</span>
+                            </li>
+                  
+                            <li class="flex items-center gap-1">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="1.5"
+                                stroke="currentColor"
+                                class="size-5 accent"
+                              >
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                              </svg>
+                  
+                              <span class="text-gray-700">Анализ сайта</span>
+                            </li>
+                  
+                            <li class="flex items-center gap-1">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="1.5"
+                                stroke="currentColor"
+                                class="size-5 accent"
+                              >
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                              </svg>
+                  
+                              <span class="text-gray-700">Выявление уязвимостей</span>
+                            </li>
+                  
+                            <li class="flex items-center gap-1">
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  fill="none"
+                                  viewBox="0 0 24 24"
+                                  stroke-width="1.5"
+                                  stroke="currentColor"
+                                  class="size-5 accent"
+                                >
+                                  <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                                </svg>
                     
-                  </div>
+                                <span class="text-gray-700">Устранение уязвимостей</span>
+                            </li>
+                            <li class="flex items-center gap-1">
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  fill="none"
+                                  viewBox="0 0 24 24"
+                                  stroke-width="1.5"
+                                  stroke="currentColor"
+                                  class="size-5 accent"
+                                >
+                                  <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                                </svg>
+                    
+                                <span class="text-gray-700">Сертификат безопасности</span>
+                            </li>
+                  
+                            <li class="flex items-center gap-1">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="1.5"
+                                stroke="currentColor"
+                                class="size-5 text-red-700"
+                              >
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                              </svg>
+                  
+                              <span class="text-gray-700">Создание сайта</span>
+                            </li>
+
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
                 </div>
               </div>
             </div>

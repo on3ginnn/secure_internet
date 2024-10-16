@@ -1,0 +1,26 @@
+.admin__control{
+  flex: 0 1 15%;
+}
+.admin__buttons{
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+.admin-flexbox{
+  gap: 30px;
+}
+.admin-btn{
+  background: transparent;
+  padding-right: 15px;
+  font-weight: 600;
+}
+.admin-btn::before{
+  display: none;
+}
+.admin-btn:hover{
+  background: var(--color-silver);
+}
+.admin__data{
+  flex: 1 1 auto;
+  flex-direction: column;
+  justify-content: flex-start;
+}
