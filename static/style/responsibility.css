@@ -93,7 +93,7 @@
       width: 100vw;
       height: 100vh;
       background: var(--color-silver);
-      transition: all 0.1 ease 0s;
+      transition: all 0.1s ease 0s;
   }
 
   .header__navbar._active{
@@ -221,7 +221,6 @@
   }
   .contact__grid{
     grid-template-columns: 1fr;
-    grid-template-rows: 100px, repeat(2, 1fr);
     gap: 30px;
   }
 
