@@ -942,6 +942,7 @@ body.dark_mode .card__item:not(._active, #card-1) .card__text_wrapper::before{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border: none;
 }
 /*--------------test-------------------*/
 
