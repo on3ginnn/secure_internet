@@ -24,3 +24,9 @@
   flex-direction: column;
   justify-content: flex-start;
 }
+.btn._active{
+  background: var(--color-silver);
+}
+.admin_datas{
+  overflow-x: scroll;
+}

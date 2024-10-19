@@ -292,6 +292,15 @@ document.addEventListener('DOMContentLoaded', function (){
     
     // обработка событий клика
     function documentClick(event){
+        // админка
+        if (event.target.closest('.admin-btn')){
+            const adminBtn = event.target.closest('.admin-btn');
+            document.querySelectorAll('.admin-btn').forEach(btn => btn.classList.remove('_active'));
+            adminBtn.classList.add('_active');
+            document.querySelectorAll('.admin_table').forEach(table => table.classList.add('hidden'));
+            document.querySelector(`.admin_table[data-admin-data='${adminBtn.dataset.adminData}']`).classList.remove('hidden');
+
+        }
         // меню
         if (event.target.closest('.burger-menu')) {
             let navbar = document.querySelector(".header__navbar");

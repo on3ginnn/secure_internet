@@ -88,61 +88,159 @@
                   <div class="flexbox__left admin__control">
                     <ul class="items admin__buttons">
                       <li class="item admin__button">
-                        <button href="" class="btn admin-btn">Пользователи</button>
+                        <button href="" data-admin-data="users" class="btn admin-btn _active">Пользователи</button>
                       </li>
                       <li class="item admin__button">
-                        <button href="" class="btn admin-btn">Услуги</button>
+                        <button href="" data-admin-data="services" class="btn admin-btn">Услуги</button>
                       </li>
                       <li class="item admin__button">
-                        <button href="" class="btn admin-btn">Заявки</button>
+                        <button href="" data-admin-data="orders" class="btn admin-btn">Заявки</button>
                       </li>
                     </ul>
                   </div>
                   <div class="flexbox__right admin__data">
-                    <div class="w-full">
-                      <table class="table-auto w-full text-left whitespace-no-wrap">
+                    <div class="w-full admin_datas">
+                      <table data-admin-data="users" class="admin_table table-auto w-full text-left whitespace-no-wrap">
                         <thead>
                           <tr>
-                            <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100 rounded-tl rounded-bl">Plan</th>
-                            <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100">Speed</th>
-                            <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100">Storage</th>
-                            <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100">Price</th>
+                            <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100 rounded-tl rounded-bl">id</th>
+                            <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100">Почта</th>
+                            <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100">Дата регистрации</th>
+                            <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100">Пароль</th>
                             <th class="w-10 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100 rounded-tr rounded-br"></th>
                           </tr>
                         </thead>
                         <tbody>
                           <tr>
-                            <td class="px-4 py-3">Start</td>
-                            <td class="px-4 py-3">5 Mb/s</td>
-                            <td class="px-4 py-3">15 GB</td>
-                            <td class="px-4 py-3 text-lg text-gray-900">Free</td>
+                            <td class="px-4 py-3">1</td>
+                            <td class="px-4 py-3">dfef3@gmail.com</td>
+                            <td class="px-4 py-3">22.04.2024</td>
+                            <td class="px-4 py-3">ferm3img84jf3mf</td>
                             <td class="w-10 text-center">
                               <input name="plan" type="checkbox">
                             </td>
                           </tr>
                           <tr>
-                            <td class="border-t-2 border-gray-200 px-4 py-3">Pro</td>
-                            <td class="border-t-2 border-gray-200 px-4 py-3">25 Mb/s</td>
-                            <td class="border-t-2 border-gray-200 px-4 py-3">25 GB</td>
-                            <td class="border-t-2 border-gray-200 px-4 py-3 text-lg text-gray-900">$24</td>
+                            <td class="border-t-2 border-gray-200 px-4 py-3">2</td>
+                            <td class="border-t-2 border-gray-200 px-4 py-3">cekfem49@gmail.com</td>
+                            <td class="border-t-2 border-gray-200 px-4 py-3">16.10.2024</td>
+                            <td class="border-t-2 border-gray-200 px-4 py-3">kgkhu453j883id</td>
                             <td class="border-t-2 border-gray-200 w-10 text-center">
                               <input name="plan" type="checkbox">
                             </td>
                           </tr>
                           <tr>
-                            <td class="border-t-2 border-gray-200 px-4 py-3">Business</td>
-                            <td class="border-t-2 border-gray-200 px-4 py-3">36 Mb/s</td>
-                            <td class="border-t-2 border-gray-200 px-4 py-3">40 GB</td>
-                            <td class="border-t-2 border-gray-200 px-4 py-3 text-lg text-gray-900">$50</td>
+                            <td class="border-t-2 border-gray-200 px-4 py-3">3</td>
+                            <td class="border-t-2 border-gray-200 px-4 py-3">bocoemrot44@gmail.com</td>
+                            <td class="border-t-2 border-gray-200 px-4 py-3">05.03.2024</td>
+                            <td class="border-t-2 border-gray-200 px-4 py-3 ">njvjernfekfgy4</td>
                             <td class="border-t-2 border-gray-200 w-10 text-center">
                               <input name="plan" type="checkbox">
                             </td>
                           </tr>
                           <tr>
-                            <td class="border-t-2 border-b-2 border-gray-200 px-4 py-3">Exclusive</td>
-                            <td class="border-t-2 border-b-2 border-gray-200 px-4 py-3">48 Mb/s</td>
-                            <td class="border-t-2 border-b-2 border-gray-200 px-4 py-3">120 GB</td>
-                            <td class="border-t-2 border-b-2 border-gray-200 px-4 py-3 text-lg text-gray-900">$72</td>
+                            <td class="border-t-2 border-b-2 border-gray-200 px-4 py-3">4</td>
+                            <td class="border-t-2 border-b-2 border-gray-200 px-4 py-3">dbosomngejdoi599@gmail.com</td>
+                            <td class="border-t-2 border-b-2 border-gray-200 px-4 py-3">12.08.2024</td>
+                            <td class="border-t-2 border-b-2 border-gray-200 px-4 py-3">84hfg489gek</td>
+                            <td class="border-t-2 border-b-2 border-gray-200 w-10 text-center">
+                              <input name="plan" type="checkbox">
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <table data-admin-data="services" class="admin_table hidden table-auto w-full text-left whitespace-no-wrap">
+                        <thead>
+                          <tr>
+                            <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100 rounded-tl rounded-bl">id</th>
+                            <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100">Услуга</th>
+                            <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100">Цена</th>
+                            <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100">Дата заказа</th>
+                            <th class="w-10 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100 rounded-tr rounded-br"></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="px-4 py-3">1</td>
+                            <td class="px-4 py-3">Консультация</td>
+                            <td class="px-4 py-3">$20</td>
+                            <td class="px-4 py-3">18.09.2024</td>
+                            <td class="w-10 text-center">
+                              <input name="plan" type="checkbox">
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="border-t-2 border-gray-200 px-4 py-3">2</td>
+                            <td class="border-t-2 border-gray-200 px-4 py-3">Устранение уязвимостей</td>
+                            <td class="border-t-2 border-gray-200 px-4 py-3">$210</td>
+                            <td class="border-t-2 border-gray-200 px-4 py-3">24.02.2024</td>
+                            <td class="border-t-2 border-gray-200 w-10 text-center">
+                              <input name="plan" type="checkbox">
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="border-t-2 border-gray-200 px-4 py-3">3</td>
+                            <td class="border-t-2 border-gray-200 px-4 py-3">С нуля</td>
+                            <td class="border-t-2 border-gray-200 px-4 py-3">$880</td>
+                            <td class="border-t-2 border-gray-200 px-4 py-3">15.03.2024</td>
+                            <td class="border-t-2 border-gray-200 w-10 text-center">
+                              <input name="plan" type="checkbox">
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="border-t-2 border-b-2 border-gray-200 px-4 py-3">4</td>
+                            <td class="border-t-2 border-b-2 border-gray-200 px-4 py-3">Устранение уязвимостей</td>
+                            <td class="border-t-2 border-b-2 border-gray-200 px-4 py-3">$272</td>
+                            <td class="border-t-2 border-b-2 border-gray-200 px-4 py-3">14.07.2024</td>
+                            <td class="border-t-2 border-b-2 border-gray-200 w-10 text-center">
+                              <input name="plan" type="checkbox">
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <table data-admin-data="orders" class="admin_table hidden table-auto w-full text-left whitespace-no-wrap">
+                        <thead>
+                          <tr>
+                            <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100 rounded-tl rounded-bl">id</th>
+                            <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100">Пользователь</th>
+                            <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100">Дата</th>
+                            <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100">Статус</th>
+                            <th class="w-10 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100 rounded-tr rounded-br"></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="px-4 py-3">1</td>
+                            <td class="px-4 py-3">3</td>
+                            <td class="px-4 py-3">15.08.2024</td>
+                            <td class="px-4 py-3">Free</td>
+                            <td class="w-10 text-center">
+                              <input name="plan" type="checkbox">
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="border-t-2 border-gray-200 px-4 py-3">2</td>
+                            <td class="border-t-2 border-gray-200 px-4 py-3">25</td>
+                            <td class="border-t-2 border-gray-200 px-4 py-3">13.10.2024</td>
+                            <td class="border-t-2 border-gray-200 px-4 py-3">$24</td>
+                            <td class="border-t-2 border-gray-200 w-10 text-center">
+                              <input name="plan" type="checkbox">
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="border-t-2 border-gray-200 px-4 py-3">3</td>
+                            <td class="border-t-2 border-gray-200 px-4 py-3">233</td>
+                            <td class="border-t-2 border-gray-200 px-4 py-3">19.04.2024</td>
+                            <td class="border-t-2 border-gray-200 px-4 py-3">$50</td>
+                            <td class="border-t-2 border-gray-200 w-10 text-center">
+                              <input name="plan" type="checkbox">
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="border-t-2 border-b-2 border-gray-200 px-4 py-3">4</td>
+                            <td class="border-t-2 border-b-2 border-gray-200 px-4 py-3">5</td>
+                            <td class="border-t-2 border-b-2 border-gray-200 px-4 py-3">22.05.2024</td>
+                            <td class="border-t-2 border-b-2 border-gray-200 px-4 py-3">Решен</td>
                             <td class="border-t-2 border-b-2 border-gray-200 w-10 text-center">
                               <input name="plan" type="checkbox">
                             </td>
@@ -150,7 +248,11 @@
                         </tbody>
                       </table>
                     </div>
-                    <div class="flex pl-4 mt-4 lg:w-2/3 w-full mx-auto">
+                    <div class="settbar mt-5 gap-5 justify-start">
+                      <a class="source__btn btn" href="./login.html">добавить</a>
+                      <a class="source__btn btn" href="./login.html">изменить</a>
+                    </div>
+                    <div class="flex pl-4 mt-4 lg:w-2/3 w-full mx-auto items-center">
                       Удалить выделенные
                       <button class="flex ml-auto text-white bg-red-500 border-0 py-2 px-6 rounded">Удалить</button>
                     </div>

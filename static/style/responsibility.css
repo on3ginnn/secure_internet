@@ -1,4 +1,12 @@
 /*----------media---------*/
+@media(max-width: 1280px){
+    .admin-flexbox{
+        flex-direction: column;
+    }
+    .admin__buttons{
+        justify-content: start;
+    }
+}
 @media(max-width: 1180px){
   .low-cards__cards {
       overflow-x: scroll;
@@ -469,7 +477,7 @@
       line-height: calc(44 / 32 * 100%);
       color: black;
   }
-  .btn {
+  .btn:not(.admin-btn) {
       -webkit-user-select: none;
       -moz-user-select: none;
       -ms-user-select: none;
@@ -645,7 +653,7 @@
 
       background: url("../img/next.svg") center no-repeat;
   }
-  .btn {
+  .btn:not(.admin-btn) {
       -webkit-user-select: none;
       -moz-user-select: none;
       -ms-user-select: none;
